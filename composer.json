@@ -11,9 +11,6 @@
   "require": {
     "php": ">=5.5.9"
   },
-  "require-dev": {
-    "nesbot/carbon": "~1.14"
-  },
   "autoload": {
     "psr-0": {
       "ChrisKonnertz\\Addresses": "src/"
