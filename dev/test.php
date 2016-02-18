@@ -22,8 +22,8 @@
 
                 $addresses = new \ChrisKonnertz\Addresses\Addresses();
 
-                $key = 'AIzaSyBkzUZQleLpDJ2VcE84ZSg34qWg72w6ltY';
-                $addresses->setApiKey($key);
+                //$key = '...';
+                //$addresses->setApiKey($key);
                 $addresses->setLanguage('de');
 
                 $resultObject = new \ChrisKonnertz\Addresses\Result;
