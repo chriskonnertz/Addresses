@@ -12,6 +12,13 @@ class Addresses
      * NOTE: These check is not reliable!
      */
     const PLAUSIBILITY_CHECK = true;
+    
+    /**
+     * Strict mode means postalcode and streetnumber 
+     * have to be simple numeric values. For example
+     * "1a" is not a valid streetnumber in strict mode.
+     */
+    const STRICT_MODE = true;
 
     /**
      * Google Geocode API URL
@@ -172,13 +179,15 @@ class Addresses
         }
 
         // Specific checks
-        if (! is_numeric($this->postalcode)) {
-            $valid = false;
-            $resultArray['postalcode'] = $this->postalcode;
-        }
-        if (! is_numeric($this->streetnumber)) {
-            $valid = false;
-            $resultArray['streetnumber'] = $this->streetnumber;
+        if (SELF::STRICT_MODE) {
+            if (! is_numeric($this->postalcode)) {
+                $valid = false;
+                $resultArray['postalcode'] = $this->postalcode;
+            }
+            if (! is_numeric($this->streetnumber)) {
+                $valid = false;
+                $resultArray['streetnumber'] = $this->streetnumber;
+            }
         }
 
         // Only check address if all values are set (so we know there exists data).
