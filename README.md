@@ -6,10 +6,10 @@ This PHP class tries to validate user input (name and address).
 
 ```php
 require __DIR__.'/src/ChrisKonnertz/Addresses/Addresses.php';
-                require __DIR__.'/src/ChrisKonnertz/Addresses/ResultInterface.php';
-                require __DIR__.'/src/ChrisKonnertz/Addresses/Result.php';
+require __DIR__.'/src/ChrisKonnertz/Addresses/ResultInterface.php';
+require __DIR__.'/src/ChrisKonnertz/Addresses/Result.php';
 
-                $addresses = new \ChrisKonnertz\Addresses\Addresses();
+$addresses = new \ChrisKonnertz\Addresses\Addresses();
 ```
 
 ## Set API key
