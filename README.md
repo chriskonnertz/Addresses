@@ -12,6 +12,8 @@ require __DIR__.'/src/ChrisKonnertz/Addresses/Result.php';
 $addresses = new \ChrisKonnertz\Addresses\Addresses();
 ```
 
+> If you use auto loadingf via Composer you can skip the `require` statements.
+
 ## Set API key
 
 ```php
