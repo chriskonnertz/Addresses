@@ -12,7 +12,7 @@ require __DIR__.'/src/ChrisKonnertz/Addresses/Result.php';
 $addresses = new \ChrisKonnertz\Addresses\Addresses();
 ```
 
-> If you use auto loadingf via Composer you can skip the `require` statements.
+> If you use auto loading via Composer you can skip the `require` statements.
 
 ## Set API key
 
@@ -37,7 +37,7 @@ The `validate`method returns an object that implements `ReturnInterface`. Per de
 ## Check if result (data) is valid
 
 ```php
-$valid = $addresses->isValid();
+$valid = $result->isValid();
 ```
 
 If the data is not valid, the `$result` object contains an array of invalid values.
@@ -75,4 +75,23 @@ Use these methods to check the address state: `addressFound`, `addressNotFound` 
 
     <input type="submit" value="Validate" id="submit" name="submit">
 </form>`
+```
+
+## Example PHP code
+
+```php
+if (isset($_POST['submit'])) {
+    // Assuming Composer auto loading
+    $addresses = new \ChrisKonnertz\Addresses\Addresses();
+
+    $addresses->setAll($_POST);
+    
+    $result = $addresses->validate();
+    
+    if ($result->isValid()) {
+        echo 'Data is valid.'
+    } else {
+        echo 'Data is invalid!';
+    }
+}
 ```
