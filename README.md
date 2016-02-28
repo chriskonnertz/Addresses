@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
     $result = $addresses->validate();
     
     if ($result->isValid()) {
-        echo 'Data is valid.'
+        echo 'Data is valid.';
     } else {
         echo 'Data is invalid!';
     }
