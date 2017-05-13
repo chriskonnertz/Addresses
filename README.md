@@ -1,6 +1,6 @@
 # Address Validation
 
-[![frozen](http://badges.github.io/stability-badges/dist/frozen.svg)](http://github.com/badges/stability-badges)
+[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges)
 
 This PHP class tries to validate user input (name and address).
 
