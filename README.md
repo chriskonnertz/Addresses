@@ -1,6 +1,10 @@
 # Address Validation
 
+[![frozen](http://badges.github.io/stability-badges/dist/frozen.svg)](http://github.com/badges/stability-badges)
+
 This PHP class tries to validate user input (name and address).
+
+> ATTENTION: This repository is no longer in active development. Issues will be answered, but bugs might not be fixed. Its recommend not to include this library into new projects.
 
 ## Instanciate without auto loading
 
