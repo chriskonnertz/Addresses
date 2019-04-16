@@ -1,6 +1,6 @@
 # Address Validation
 
-> ATTENTION: This repository is no longer maintained.
+> ATTENTION: This repository is no longer maintained!
 
 This PHP class tries to validate user input (name and address).
 
