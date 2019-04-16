@@ -1,10 +1,8 @@
 # Address Validation
 
-[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges)
+> ATTENTION: This repository is no longer maintained.
 
 This PHP class tries to validate user input (name and address).
-
-> ATTENTION: This repository is no longer in active development. Issues will be answered, but bugs might not be fixed. It is recommended not to include this library into new projects.
 
 ## Instanciate without auto loading
 
